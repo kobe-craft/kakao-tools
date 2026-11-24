@@ -1,8 +1,26 @@
 /* ───────── 터미널 화면 ───────── */
 #term{position:fixed;inset:0;z-index:99;background:#000;color:#33ff66;font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;font-size:13px;line-height:1.4;padding:calc(16px + env(safe-area-inset-top,0px)) 14px 16px;display:none;overflow:auto}
 #term.on{display:block}
+#term.shake{animation:sh .12s #term{position:fixed;inset:0;z-index:99;background:#000;color:#33ff66;font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;font-size:13px;line-height:1.4;padding:calc(16px + env(safe-area-inset-top,0px)) 14px 16px;display:none;overflow:auto}
+#term.on{display:block}
 #term.shake{animation:sh .12s infinite}
 @keyframes sh{0%{transform:translate(0,0)}25%{transform:translate(-2px,1px)}50%{transform:translate(2px,-1px)}75%{transform:translate(-1px,-2px)}}
+.red{color:#ff3b3b}.yel{color:#ffd23b}
+.l{white-space:pre-wrap;word-break:break-all;min-height:1.4em}
+.ka{white-space:pre;overflow:hidden;line-height:1.2;margin:6px 0 8px;font-variant-ligatures:none;animation:gl 1.4s ease-in-out infinite}
+@keyframes gl{50%{opacity:.82}}
+.e1{color:#ff2433;text-shadow:0 0 6px #ff0f20}.e2{color:#b0121c}
+#pops{position:fixed;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.pop{position:absolute;background:#0b0000;border:2px solid #ff2433;color:#ff6b75;font-size:11px;line-height:1.35;box-shadow:0 0 12px rgba(255,36,51,.55);animation:pp .18s ease-out}
+.pop.warn{border-color:#ffd23b;color:#ffd23b;box-shadow:0 0 12px rgba(255,210,59,.45)}
+.pt{display:flex;justify-content:space-between;background:#ff2433;color:#000;font-weight:700;padding:2px 6px}
+.warn .pt{background:#ffd23b}
+.pb{padding:8px 8px 4px;word-break:break-all}
+.pk{padding:0 8px 8px;opacity:.8}
+@keyframes pp{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+#dmg{position:fixed;inset:0;width:100%;height:100%;z-index:6;pointer-events:none}
+#hud{display:none;position:fixed;z-index:7;left:10px;right:10px;top:calc(8px + env(safe-area-inset-top,0px));margin:0;padding:8px 10px;background:rgba(0,0,0,.78);border:1px solid #ff2433;color:#ff5560;font-size:11px;line-height:1.4;white-space:pre-wrap;box-shadow:0 0 10px rgba(255,36,51,.5)}
+#blk{position:fixed;inset:0;background:#000;z-index:98;display:none}50%{transform:translate(2px,-1px)}75%{transform:translate(-1px,-2px)}}
 .red{color:#ff3b3b}.yel{color:#ffd23b}
 .l{white-space:pre-wrap;word-break:break-all;min-height:1.4em}
 
