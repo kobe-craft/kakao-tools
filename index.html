@@ -6,25 +6,20 @@
 <title>kakao-tools</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  :root { color-scheme: light dark; --card: #fff; --line: #ddd; --accent: #c0152a; }
-  @media (prefers-color-scheme: dark) { :root { --card: #202020; --line: #333; --accent: #ff4d5e; } }
-  body { margin: 0; padding: 24px; font-family: -apple-system, "Noto Sans KR", sans-serif; }
-  main { max-width: 480px; margin: 0 auto; }
-  h1 { font-size: 20px; }
-  p { line-height: 1.6; opacity: .8; }
-  a.link { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 10px 0; color: var(--accent); text-decoration: none; font-weight: 600; }
+:root{color-scheme:light dark;--card:#fff;--line:#ddd;--accent:#c0152a}
+@media (prefers-color-scheme:dark){:root{--card:#202020;--line:#333;--accent:#ff4d5e}}
+body{margin:0;padding:24px;font-family:-apple-system,"Noto Sans KR",sans-serif}
+main{max-width:480px;margin:0 auto}
+h1{font-size:20px}
+a.link{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:10px 0;color:var(--accent);text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
-
 <main>
   <h1>kakao-tools</h1>
-  <p>아래 링크를 누르면 연출이 나온 뒤 이동합니다.</p>
-
   <a class="link" href="https://kobe-craft.github.io/kakao-tools/" data-trap>kakao-tools 열기</a>
 </main>
 
-<!-- 연출 화면 (수정하지 마세요) -->
 <div id="blk"></div>
 <div id="term">
   <div id="out"></div>
